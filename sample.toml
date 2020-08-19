@@ -1,0 +1,25 @@
+[general]
+title = "Database x, table y testing"
+output_location = "s3://bucket/"
+output_region = "eu-west-1"
+
+[datasource]
+query = "SELECT date_field as date, count(*) as count FROM my_table where date between date '{start_date}' and date '{end_date}'"
+database = "my_db"
+start_date = 1990-01-01
+end_date = 1990-12-01
+
+[rules]
+  [[rules.min_records]]
+  name = "Weekends must have a few records"
+  ignore_dates = [1990-01-01, 1990-02-02]
+  ignore_days = ["Weekdays"]
+  min_records = 2
+  explanation = "This datasource will always have some activity at weekends, just not as much as in the week"
+
+  [[rules.min_records]]
+  name = "Weekdays must have many records"
+  ignore_dates = [1990-01-01, 1990-02-02]
+  ignore_days = ["Weekends"]
+  min_records = 2
+  explanation = "There will always be a lot of activity during the week unless there is some downtime"
