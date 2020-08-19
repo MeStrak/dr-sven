@@ -6,7 +6,7 @@ Dr Sven is a **data health checker** which performs a checkup on your data to  g
 > I have no idea if this will actually be useful for anyone else, I just thought I'd release it and find out. Also please consider this an alpha version only.
 
 ## Motivation
-Dr. Sven is designed with a datalake type situation in mind where data is transferred from one datasource to another repositoriy. Most data ingestion monitoring tools I've seen focus on whether individual processes have run eithout error at the expected time. In some complex scenarios they also try  to check that elements of the source data match the finally processed data which can be very difficult to do.
+Dr. Sven is designed with a data lake type situation in mind where data is transferred from one data source to another repositoriy. Most data ingestion monitoring tools I've seen focus on whether individual processes have run without error at the expected time. In some complex scenarios they also try  to check that elements of the source data match the finally processed data which can be very difficult to do.
 
 Imagine this situation ... all dashboards are green, logs contain no errors and all appears well with the world. Then a pesky human looks at the data and says *"but there are no records from Sunday, that's not right"* or *"there's something weird - it looks like there's a hole in this data from 1 month ago"*.
 
@@ -15,7 +15,7 @@ Dr. Sven aims to reduce dependence on that human by providing a naive yet effect
 ## Dr. Sven sounds amazing. Wait ... what is it, and what does it actually do?
 
 Dr. Sven is a simple lambda function written in Python that does the following:
-1. Queries a datasource (currently limited to AWS Athena) with a query that you provide to return records grouped by date
+1. Queries a data source (currently limited to AWS Athena) with a query that you provide to return records grouped by date
 2. Checks the returned dataset complies with data guidelines defined in your Dr. Sven config file
 3. Outputs a .md summary of the checkup
 4. Outputs a .csv with a list of all rules that failed so you can check in more detail
