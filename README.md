@@ -45,8 +45,8 @@ Dr. Sven is a simple lambda function written in Python that does the following:
  3. Attach layers for Dr. Sven and AWS-Wrangler dependencies
 
     This part is messy for now, I'll make it better. For now create lambda layers using the S3 URLs below. Use Python 3.8 runtime.
-- https://dr-sven.s3-eu-west-1.amazonaws.com/awswrangler-layer-1.8.1-py3.8.zip
-- https://dr-sven.s3-eu-west-1.amazonaws.com/dr-sven_lambda-layer.zip
+    - https://dr-sven.s3-eu-west-1.amazonaws.com/awswrangler-layer-1.8.1-py3.8.zip
+    - https://dr-sven.s3-eu-west-1.amazonaws.com/dr-sven_lambda-layer.zip
 
  4. Create rule configuration files and upload them to an S3 bucket
 
