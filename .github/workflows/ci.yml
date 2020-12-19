@@ -27,9 +27,8 @@ jobs:
       run: poetry --version
     - name: Install dependencies
       run: |
-        poetry shell
+        poetry shell --no-interactive
         poetry install
-      shell: bash
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
