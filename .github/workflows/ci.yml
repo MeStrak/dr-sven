@@ -16,8 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v2
+    - uses: actions/setup-python@v2
       with:
         python-version: 3.8
     - name: Install Python Poetry
@@ -30,6 +29,7 @@ jobs:
       run: |
         poetry shell
         poetry install
+      shell: bash
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
