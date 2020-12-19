@@ -10,7 +10,7 @@ on:
     branches: [ master ]
 
 jobs:
-  quality:
+  Quality:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -49,12 +49,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
 
       - name: Semantic Release
-        env:
-          GH_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
         run: |
           python3 -m pip install python-semantic-release
           semantic-release --help
