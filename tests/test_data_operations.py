@@ -5,11 +5,6 @@ from dr_sven import __version__
 from dr_sven.data_ops import exclude_dates, generate_dates, \
      pad_missing_dates, add_day_of_week
 
-
-def test_version():
-    assert __version__ == '0.1.0'
-
-
 @pytest.fixture(scope='module')
 def basic_data_indexed():
     df = pd.DataFrame(
