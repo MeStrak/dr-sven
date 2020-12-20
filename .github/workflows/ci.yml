@@ -55,4 +55,6 @@ jobs:
       - name: Semantic Release
         run: |
           pip install python-semantic-release
+          git config --global user.email "semantic-release@github.com"
+          git config --global user.name "SemanticRelease"
           semantic-release version
