@@ -55,4 +55,4 @@ jobs:
       - name: Semantic Release
         run: |
           pip install python-semantic-release
-          semantic-release --help
+          semantic-release version
