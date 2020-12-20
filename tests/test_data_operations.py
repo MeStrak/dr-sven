@@ -1,9 +1,9 @@
 import pytest
 import pandas as pd
 
-from dr_sven import __version__
 from dr_sven.data_ops import exclude_dates, generate_dates, \
      pad_missing_dates, add_day_of_week
+
 
 @pytest.fixture(scope='module')
 def basic_data_indexed():
@@ -22,6 +22,7 @@ def basic_data_indexed():
     df.set_index('date', inplace=True)
     df.index = pd.to_datetime(df.index)
     return df
+
 
 @pytest.fixture(scope='module')
 def basic_data_not_indexed():
