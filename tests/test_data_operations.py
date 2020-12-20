@@ -127,7 +127,7 @@ def test_pad_missing_dates_returns_all_dates(basic_data_not_indexed):
     print('end = ' + end)
     print('dates_df=')
     print(dates_df)
-    
+
     assert '2020-08-20' in dates_df.index
 
 
