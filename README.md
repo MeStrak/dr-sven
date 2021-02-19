@@ -33,7 +33,7 @@ Dr. Sven is a simple lambda function written in Python that does the following:
 
  # Using Dr. Sven
  ## Installation
- Installation is currently a bit too manual, I'll work on automatic that. Even though it's manual the process is still pretty simple.
+ Installation is currently a bit too manual, I'll work on automating that. Even though it's manual the process is still pretty simple.
  1. Zip application files
 
     cd to project folder then `zip function.zip *.py`
