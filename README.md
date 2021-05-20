@@ -1,3 +1,5 @@
+_Note: This repository is no longer actively maintained. I now use https://greatexpectations.io/ for checking data issues instead._
+
 # Hello from Dr. Sven!
 Dr Sven is a **data health checker** which performs a checkup on your data to  give you a simple indication of whether it's in good shape or not.
 
