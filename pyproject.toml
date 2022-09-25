@@ -21,7 +21,7 @@ toml = "^0.10.1"
 awswrangler = "^1.8.1"
 dateparser = "^0.7.6"
 nanoid = "^2.0.0"
-python-slugify = "^4.0.1"
+python-slugify = "^6.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
