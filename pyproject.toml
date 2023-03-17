@@ -24,7 +24,7 @@ nanoid = "^2.0.0"
 python-slugify = "^4.0.1"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = "^7.0.0"
 black = "^19.10b0"
 flake8 = "^3.8.3"
 
