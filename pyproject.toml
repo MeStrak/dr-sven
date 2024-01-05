@@ -15,7 +15,7 @@ upload_to_release = true
 build_command = "pip install poetry && poetry build"
 
 [tool.poetry.dependencies]
-python = "^3.8, <3.9"
+python = "<3.13"
 pandas = "^1.1.0"
 toml = "^0.10.1"
 awswrangler = "^1.8.1"
